@@ -1,4 +1,4 @@
-package com.example.ssendhil.dream_team;
+package com.hackthe6ix2019.android.receipts;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.ssendhil.dream_team", appContext.getPackageName());
+        assertEquals("com.hackthe6ix2019.android.receipts", appContext.getPackageName());
     }
 }

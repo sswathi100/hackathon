@@ -1,4 +1,4 @@
-package com.example.ssendhil.dream_team;
+package com.hackthe6ix2019.android.receipts;
 
 import org.junit.Test;
 
