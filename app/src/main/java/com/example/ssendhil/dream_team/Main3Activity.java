@@ -6,6 +6,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.support.v4.app.Fragment;
 
 public class Main3Activity extends AppCompatActivity {
 
@@ -16,17 +17,25 @@ public class Main3Activity extends AppCompatActivity {
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+            Fragment fragment = null;
+
             switch (item.getItemId()) {
                 case R.id.navigation_home:
                     mTextMessage.setText(R.string.title_home);
+                    // replace with: fragment = new MyFragment()
                     return true;
                 case R.id.navigation_dashboard:
                     mTextMessage.setText(R.string.title_dashboard);
+                    // replace with: fragment = new MyFragment()
                     return true;
                 case R.id.navigation_notifications:
                     mTextMessage.setText(R.string.title_notifications);
+                    // replace with: fragment = new MyFragment()
                     return true;
             }
+
+            //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
+
             return false;
         }
     };
